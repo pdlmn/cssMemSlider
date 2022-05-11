@@ -44,8 +44,10 @@ body {
   display: none;
 }
 
-.slider__bullets {
+.slider__controls {
   display: flex;
+
+  justify-self: center;
 }
 
 .slider__bullet {
@@ -53,7 +55,7 @@ body {
 
   width: 0.8rem;
   height: 0.8rem;
-  border: 0.2rem solid var(--radio-color);
+  border: 0.1rem solid var(--radio-color);
   border-radius: 50%;
 
   background-color: var(--radio-color);
@@ -61,8 +63,8 @@ body {
 }
 
 .slider__radio-area {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
 
   display: flex;
   justify-content: center;
