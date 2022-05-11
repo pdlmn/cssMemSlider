@@ -46,7 +46,6 @@ body {
 
 .slider__bullets {
   display: flex;
-  gap: 0.8rem;
 }
 
 .slider__bullet {
@@ -61,6 +60,17 @@ body {
   transition: 0.2s;
 }
 
+.slider__radio-area {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
 .slider__radio:checked + .slider__radio-area > .slider__bullet {
   background-color: transparent;
 }
@@ -70,8 +80,7 @@ body {
 }
 
 @media (hover: hover) {
-  .slider__bullet:hover {
-    cursor: pointer;
+  .slider__radio-area:hover > .slider__bullet {
     background-color: var(--text-color);
     border: 0.2rem solid var(--text-color);
   }
