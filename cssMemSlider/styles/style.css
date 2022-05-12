@@ -128,7 +128,8 @@ body {
   cursor: pointer;
 }
 
-.slider__radio:checked + .slider__radio-area > .slider__bullet {
+/* added [for^="radio"] for more specificity, to beat background color on hover effect */
+.slider__radio-area[for^="radio"]:focus .slider__bullet {
   background-color: transparent;
 }
 
@@ -139,6 +140,7 @@ body {
 @media (hover: hover) {
   .slider__radio-area:hover > .slider__bullet {
     background-color: var(--text-color);
-    border: 0.2rem solid var(--text-color);
+    border: 0.1rem solid var(--text-color);
+    transform: scale(1.5);
   }
 }
