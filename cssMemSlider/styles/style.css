@@ -79,19 +79,19 @@ body {
   background-color: rgb(200, 100, 200);
 }
 
-#radio1:checked ~ .slider__images {
+#radio1:checked ~ .slider__frame .slider__images {
   transform: translate(0, 0);
 } 
 
-#radio2:checked ~ .slider__images {
+#radio2:checked ~ .slider__frame .slider__images {
   transform: translate(-100%, 0);
 } 
 
-#radio3:checked ~ .slider__images {
+#radio3:checked ~ .slider__frame .slider__images {
   transform: translate(-200%, 0);
 } 
 
-#radio4:checked ~ .slider__images {
+#radio4:checked ~ .slider__frame .slider__images {
   transform: translate(-300%, 0);
 }
 
@@ -129,7 +129,10 @@ body {
 }
 
 /* added [for^="radio"] for more specificity, to beat background color on hover effect */
-.slider__radio-area[for^="radio"]:focus .slider__bullet {
+#radio1:checked ~ .slider__controls [for="radio1"] .slider__bullet,
+#radio2:checked ~ .slider__controls [for="radio2"] .slider__bullet,
+#radio3:checked ~ .slider__controls [for="radio3"] .slider__bullet,
+#radio4:checked ~ .slider__controls [for="radio4"] .slider__bullet {
   background-color: transparent;
 }
 
