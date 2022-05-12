@@ -49,6 +49,8 @@ body {
   justify-self: center;
 
   display: flex;
+
+  transition: 0.5s;
 }
 
 .slider__image {
@@ -82,15 +84,15 @@ body {
 } 
 
 #radio2:checked ~ .slider__images {
-  transform: translate(-780px, 0);
+  transform: translate(-100%, 0);
 } 
 
 #radio3:checked ~ .slider__images {
-  transform: translate(-1560px, 0);
+  transform: translate(-200%, 0);
 } 
 
 #radio4:checked ~ .slider__images {
-  transform: translate(-2340px, 0);
+  transform: translate(-300%, 0);
 }
 
 .slider__radio {
