@@ -11,27 +11,34 @@
 <body>
   <div class="wrapper">
     <div class="slider">
-      <div class="slider__img">Slider image.</div>
+      <div class="slider__frame">
+        <input type="radio" id="radio1" name="slider" class="slider__radio" checked>
+        <input type="radio" id="radio2" name="slider" class="slider__radio">
+        <input type="radio" id="radio3" name="slider" class="slider__radio">
+        <input type="radio" id="radio4" name="slider" class="slider__radio">
+        <div class="slider__images">
+          <div class="slider__image" id="image1">Slider image 1.</div>
+          <div class="slider__image" id="image2">Slider image 2.</div>
+          <div class="slider__image" id="image3">Slider image 3.</div>
+          <div class="slider__image" id="image4">Slider image 4.</div>
+        </div>
+      </div>
       <div class="slider__controls">
-          <input type="radio" id="#radio1" name="slider" class="slider__radio" checked>
-          <label for="#radio1" class="slider__radio-area">
-            <div class="slider__bullet"></div>
-          </label>
+        <label for="radio1" class="slider__radio-area">
+          <div class="slider__bullet"></div>
+        </label>
 
-          <input type="radio" id="#radio2" name="slider" class="slider__radio">
-          <label for="#radio2" class="slider__radio-area">
-            <div class="slider__bullet"></div>
-          </label>
+        <label for="radio2" class="slider__radio-area">
+          <div class="slider__bullet"></div>
+        </label>
 
-          <input type="radio" id="#radio3" name="slider" class="slider__radio">
-          <label for="#radio3" class="slider__radio-area">
-            <div class="slider__bullet"></div>
-          </label>
+        <label for="radio3" class="slider__radio-area">
+          <div class="slider__bullet"></div>
+        </label>
 
-          <input type="radio" id="#radio4" name="slider" class="slider__radio">
-          <label for="#radio4" class="slider__radio-area">
-            <div class="slider__bullet"></div>
-          </label>
+        <label for="radio4" class="slider__radio-area">
+          <div class="slider__bullet"></div>
+        </label>
       </div>
       <div class="slider__text">
         Slider text.
