@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Meme slider</title>
+  </head>
+<body>
+  <div class="wrapper">
+    <div class="slider">
+      <input type="radio" id="radio1" name="slider" class="slider__radio" checked>
+      <input type="radio" id="radio2" name="slider" class="slider__radio">
+      <input type="radio" id="radio3" name="slider" class="slider__radio">
+      <input type="radio" id="radio4" name="slider" class="slider__radio">
+      <div class="slider__frame" id="image">
+        <div class="slider__images">
+          <div class="slider__image-wrapper" id="image1">
+            <img class="slider__image" src="https://miro.medium.com/max/1400/0*r6iQzljiuJavVxRM" alt="">
+          </div>
+          <div class="slider__image-wrapper" id="image2">
+            <img class="slider__image" src="https://static.demilked.com/wp-content/uploads/2021/08/612497594e7a4-1392459191353286656-png__700.jpg" alt="">
+          </div>
+          <div class="slider__image-wrapper" id="image3">
+            <img class="slider__image" src="https://img-9gag-fun.9cache.com/photo/ad8j4QV_460s.jpg" alt="">
+          </div>
+          <div class="slider__image-wrapper" id="image4">
+            <img class="slider__image" src="https://code-love.com/wp-content/uploads/2019/04/latsyqzaqnq21.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="slider__controls">
+        <label tabindex="0" for="radio1" class="slider__radio-area">
+          <div class="slider__bullet"></div>
+        </label>
+
+        <label tabindex="0" for="radio2" class="slider__radio-area">
+          <div class="slider__bullet"></div>
+        </label>
+
+        <label tabindex="0" for="radio3" class="slider__radio-area">
+          <div class="slider__bullet"></div>
+        </label>
+
+        <label tabindex="0" for="radio4" class="slider__radio-area">
+          <div class="slider__bullet"></div>
+        </label>
+      </div>
+      <div class="slider__frame" id="texts">
+        <div class="slider__texts">
+          <div id="text1" class="slider__text">
+            Me thinking I am a real programmer<br><br>
+            Me Googling 'switch statement sytnax' 15 seconds later
+          </div>
+          <div id="text2" class="slider__text">
+            6 hours of debugging can save you 5 minutes of<br>reading documentation
+          </div>
+          <div id="text3" class="slider__text">
+            Programmers looking at programming memes:<br><br>
+            Ah, humor based on my pain.<br>Ah, ha, ha.
+          </div>
+          <div id="text4" class="slider__text">
+            me: let's rewrite CSS<br><br>
+            my website: *mess*
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
